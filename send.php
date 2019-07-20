@@ -3,7 +3,7 @@ require_once './vendor/autoload.php';
 echo 'a';
 try {
 	echo 'b';
-	if($_GET['admincode']=='ABC123!!ajij}(}'){
+	if($_GET['admincode']=='ABC123ajij'){
 		// Create the SMTP Transport
 		$transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
 			->setUsername('oktobo.psikologi@gmail.com')

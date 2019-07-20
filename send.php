@@ -24,7 +24,8 @@ try {
 		 
 	 
 		// Set the plain-text "Body"
-		$message->setBody($_GET['content']);    
+		// Set a "Body"
+		$message->addPart($_GET['content'], 'text/html');
 	 
 		// Send the message
 		$result = $mailer->send($message);
